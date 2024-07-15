@@ -31,8 +31,22 @@
 // }
 
 
-let num =3.44;
-let value = Math.round(num);
+// let num =3.44;
+// let value = Math.round(num);
 
-document.getElementById("math").textContent = value;
-console.log(Math.round(num));
+// document.getElementById("math").textContent = value;
+// console.log(Math.round(num));
+
+hello(goodbye)
+
+function hello(callback) {
+    setTimeout(() => {
+        console.log("Hello, World!");
+        callback();
+    }, 2000)
+}
+function goodbye() {
+    console.log("Goodbye, World!");
+    
+}   
+
